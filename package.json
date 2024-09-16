@@ -1,0 +1,53 @@
+{
+  "name": "@enymo/react-clickable-next",
+  "version": "0.0.0",
+  "description": "Simple React Component providing a unified API for working with Buttons, Anchors and Next.js Links.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "tsup": {
+    "entry": [
+      "src/js/index.tsx"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enymo/react-clickable-next.git"
+  },
+  "author": "enymo GmbH",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.6",
+    "postcss": "^8.4.17",
+    "tsup": "^8.0.2",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "next": "^14",
+    "react": ">=17"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  }
+}
