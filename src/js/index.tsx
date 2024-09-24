@@ -49,7 +49,7 @@ export function Clickable({
             )
         }
     }
-    else if (onClick) {
+    else if (submit || onClick) {
         return (
             <button
                 onClick={onClick}
