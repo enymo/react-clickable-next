@@ -56,6 +56,7 @@ export function Clickable({
                 className={classNames(className, {disabled})}
                 style={style}
                 type={submit ? "submit" : "button"}
+                disabled={disabled}
             >{children}</button>
         )
     }
